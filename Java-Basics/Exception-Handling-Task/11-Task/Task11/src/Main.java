@@ -3,7 +3,7 @@ public class Main {
 
         try {
             System.out.println("Inside try block");
-            int x = 10 / 0;   // This will cause an ArithmeticException
+            int x = 10 / 0;   
         }
         catch (ArithmeticException e) {
             System.out.println("Inside catch block: " + e.getMessage());
