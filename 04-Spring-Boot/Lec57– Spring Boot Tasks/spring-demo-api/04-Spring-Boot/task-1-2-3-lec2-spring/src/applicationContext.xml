@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+       http://www.springframework.org/schema/beans
+       https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<!-- Task 1 + Task 3 -->
+	<bean id="personService" class="com.service.PersonService"
+		scope="prototype" init-method="init" destroy-method="destroy" />
+
+	<!-- Task 1 -->
+	<bean id="managerService" class="com.service.ManagerService" />
+
+	<!-- Task 2 -->
+	<bean id="accountService" class="com.service.AccountServiceImpl">
+
+		<constructor-arg ref="personService" />
+
+	</bean>
+
+</beans>

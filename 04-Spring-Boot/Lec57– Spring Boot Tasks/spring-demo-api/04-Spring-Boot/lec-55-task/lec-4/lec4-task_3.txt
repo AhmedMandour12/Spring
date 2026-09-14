@@ -1,0 +1,209 @@
+DATABASE RELATIONSHIPS
+
+
+
+====>{ ONE-TO-ONE (1 : 1) }<=====
+
+
+
+1. Student - Passport
+
+Each student has one passport, and each passport belongs to one student.
+
+Student  1 <--------> 1  Passport
+
+
+
+====>{ ONE-TO-MANY (1 : N) }<=====
+
+
+
+2. Customer - Order
+
+Each customer can have many orders, and each order belongs to one customer.
+
+Customer  1 <--------> N  Order
+
+
+--------------------------------------------------
+
+
+3. Library - Book
+
+Each library has many books, and each book belongs to one library.
+
+Library  1 <--------> N  Book
+
+
+--------------------------------------------------
+
+
+4. Doctor - Patient
+
+Each doctor can have many patients, and each patient belongs to one doctor.
+
+Doctor  1 <--------> N  Patient
+
+
+--------------------------------------------------
+
+
+5. Invoice - Payment
+
+Each invoice can have many payments, and each payment belongs to one invoice.
+
+Invoice  1 <--------> N  Payment
+
+
+--------------------------------------------------
+
+
+6. Flight - Ticket
+
+Each flight can have many tickets, and each ticket belongs to one flight.
+
+Flight  1 <--------> N  Ticket
+
+
+--------------------------------------------------
+
+
+7. Parent - Child
+
+Each parent can have many children, and each child belongs to one parent.
+
+Parent  1 <--------> N  Child
+
+
+--------------------------------------------------
+
+
+8. School - Classroom
+
+Each school has many classrooms, and each classroom belongs to one school.
+
+School  1 <--------> N  Classroom
+
+
+--------------------------------------------------
+
+
+9. Hotel - Room
+
+Each hotel has many rooms, and each room belongs to one hotel.
+
+Hotel  1 <--------> N  Room
+
+
+--------------------------------------------------
+
+
+10. Account - Transaction
+
+Each account can have many transactions, and each transaction belongs to one account.
+
+Account  1 <--------> N  Transaction
+
+
+--------------------------------------------------
+
+
+11. Country - City
+
+Each country has many cities, and each city belongs to one country.
+
+Country  1 <--------> N  City
+
+
+--------------------------------------------------
+
+
+12. Driver - Car
+
+Each driver can drive many cars, and each car belongs to one driver.
+
+Driver  1 <--------> N  Car
+
+
+
+====>{ MANY-TO-MANY (M : N) }<=====
+
+
+13. Employee - Department
+
+Each employee belongs to one department, and each department has many employees.
+
+Employee  N <--------> 1  Department
+
+
+--------------------------------------------------
+
+
+14. Book - Author
+
+Each book belongs to one author, and each author can write many books.
+
+Book  N <--------> 1  Author
+
+
+--------------------------------------------------
+
+
+15. Teacher - Subject
+
+Each teacher teaches one subject, and each subject can be taught by many teachers.
+
+Teacher  N <--------> 1  Subject
+
+
+--------------------------------------------------
+
+
+16. User - Role
+
+Each user has one role, and each role can be assigned to many users.
+
+User  N <--------> 1  Role
+
+
+--------------------------------------------------
+
+
+17. Product - Category
+
+Each product belongs to one category, and each category can have many products.
+
+Product  N <--------> 1  Category
+
+
+
+
+MANY-TO-MANY (M : N)
+
+
+
+18. Course - Student
+
+Each course can have many students, and each student can enroll in many courses.
+
+Course  M <--------> N  Student
+
+
+--------------------------------------------------
+
+
+19. Movie - Actor
+
+Each movie can have many actors, and each actor can appear in many movies.
+
+Movie  M <--------> N  Actor
+
+
+--------------------------------------------------
+
+
+20. Driver - Car (Alternative Case)
+
+In some systems, each driver can drive many cars, and each car can be driven by many drivers.
+
+Driver  M <--------> N  Car

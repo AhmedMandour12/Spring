@@ -1,0 +1,4 @@
+search
+SELECT * FROM employees WHERE FIRST_NAME BETWEEN 'a' AND 'c';
+What result will be shown?
+ And why?
